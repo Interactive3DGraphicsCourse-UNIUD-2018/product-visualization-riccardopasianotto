@@ -24,3 +24,6 @@ The material to be able to reflect the light and show their properties specified
 To reproduce an ambient occlusion of the bottle projected on the plane I've imported the .obj model inside blender and followed a tutorial for the creation of an ambient occlusion texture with a perpendicular ambient light. This texture then is applied to the plane to reproduce the effect of the shadow casting of the bottle.
 
 Now the scene looks like a photo booth similar to the [calligaris store](https://www.calligaris.com/en_int/shop/annie-cs-1853-lh.html) from which I've taken the inspiration for my own configurator.
+
+We can see an image of the visualizer at this moment below:
+![Image of the Visualizer at the time](screenshots/product-visualizer-no-gui.png)
