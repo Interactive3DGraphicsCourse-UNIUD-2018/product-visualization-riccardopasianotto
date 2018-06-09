@@ -18,3 +18,5 @@ I've structured the objects in a separate folder. Each object has an associated 
 The *ConfiguratorScene* is the root group of the scene.
 
 The objects should have a material, in particular these materials and their textures (using the metallic workflow) are stored in separate subfolders inside the root folder `materials`. Then for each material there is a specific class that loads the textures and create an instance of a material with the specified textures.
+
+The material to be able to reflect the light and show their properties specified through textures (for instance the roughness) need to have an associated *environment map*. This environment map is created through a CubeMap that I've generated through an online tool. The image divided in cubes is a studio environment found in google images.
