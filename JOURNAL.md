@@ -9,3 +9,5 @@ These days I've tried different solutions to get the project organized and struc
 In particular I've found a [starter pack](https://github.com/edwinwebb/three-seed) with webpack, npm and other configurations that supported my needs.
 
 I'm going to explain the organization of the project with a commit for each part and an update in the journal to document the process.
+
+The project came with a standard `package.json` to download all the dependencies required for the project to work. Since it includes webpack to load resources, there is also a `webpack.config.js` file.
