@@ -13,7 +13,7 @@ export default class VisualizationPlane extends THREE.Group {
     material.envMap = envMap;
     material.envMapIntensity = 1;
     material.roughness = 1;
-    material.map = textureLoader.load("lightmap.002.png");
+    material.map = textureLoader.load("aoplane.png");
 
     var mesh = new THREE.Mesh(geometry, material);
 

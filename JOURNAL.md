@@ -20,3 +20,7 @@ The *ConfiguratorScene* is the root group of the scene.
 The objects should have a material, in particular these materials and their textures (using the metallic workflow) are stored in separate subfolders inside the root folder `materials`. Then for each material there is a specific class that loads the textures and create an instance of a material with the specified textures.
 
 The material to be able to reflect the light and show their properties specified through textures (for instance the roughness) need to have an associated *environment map*. This environment map is created through a CubeMap that I've generated through an online tool. The image divided in cubes is a studio environment found in google images.
+
+To reproduce an ambient occlusion of the bottle projected on the plane I've imported the .obj model inside blender and followed a tutorial for the creation of an ambient occlusion texture with a perpendicular ambient light. This texture then is applied to the plane to reproduce the effect of the shadow casting of the bottle.
+
+Now the scene looks like a photo booth similar to the [calligaris store](https://www.calligaris.com/en_int/shop/annie-cs-1853-lh.html) from which I've taken the inspiration for my own configurator.
