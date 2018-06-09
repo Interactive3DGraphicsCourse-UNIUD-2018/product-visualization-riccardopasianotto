@@ -13,3 +13,6 @@ I'm going to explain the organization of the project with a commit for each part
 The project came with a standard `package.json` to download all the dependencies required for the project to work. Since it includes webpack to load resources, there is also a `webpack.config.js` file.
 
 The `main.js` file is the starting point of all the the project. There is not the need for an index since we treat this project with modules.
+
+I've structured the objects in a separate folder. Each object has an associated model inside an `.obj` file loaded through his class. These objects are imported then in a general object *ConfiguratorScene* that contains all the lights, products and so on.
+The *ConfiguratorScene* is the root group of the scene.
