@@ -16,3 +16,5 @@ The `main.js` file is the starting point of all the the project. There is not th
 
 I've structured the objects in a separate folder. Each object has an associated model inside an `.obj` file loaded through his class. These objects are imported then in a general object *ConfiguratorScene* that contains all the lights, products and so on.
 The *ConfiguratorScene* is the root group of the scene.
+
+The objects should have a material, in particular these materials and their textures (using the metallic workflow) are stored in separate subfolders inside the root folder `materials`. Then for each material there is a specific class that loads the textures and create an instance of a material with the specified textures.
