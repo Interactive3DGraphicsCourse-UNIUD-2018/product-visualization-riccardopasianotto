@@ -11,3 +11,5 @@ In particular I've found a [starter pack](https://github.com/edwinwebb/three-see
 I'm going to explain the organization of the project with a commit for each part and an update in the journal to document the process.
 
 The project came with a standard `package.json` to download all the dependencies required for the project to work. Since it includes webpack to load resources, there is also a `webpack.config.js` file.
+
+The `main.js` file is the starting point of all the the project. There is not the need for an index since we treat this project with modules.
