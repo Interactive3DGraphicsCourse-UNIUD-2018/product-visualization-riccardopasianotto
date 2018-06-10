@@ -7,7 +7,7 @@ export default class BottleCap extends THREE.Group {
     super();
     const material = new BaseMetalMaterial();
     material.side = THREE.DoubleSide;
-    this.object = null;
+    this.objModel = null;
     new THREE.OBJLoader()
       .load(MODEL, (mesh) => {
 
@@ -18,12 +18,12 @@ export default class BottleCap extends THREE.Group {
         }));
 
         this.add(mesh);
-        this.object = mesh;
+        this.objModel = mesh;
       });
   }
 
   setMaterial(m){
-    this.object.traverse(((child) => {
+    this.objModel.traverse(((child) => {
       if (child instanceof THREE.Mesh) {
         child.material = m;
       }
