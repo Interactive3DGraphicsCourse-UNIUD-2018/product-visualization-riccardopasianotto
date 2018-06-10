@@ -2,9 +2,11 @@ import * as THREE from 'three';
 import Environment from '../objects/Environment.js';
 
 export default class BaseMetalMaterial extends THREE.MeshStandardMaterial {
+
   constructor() {
     super();
-    
+    this.name = 'BMM';
+
     const TEXTURE_PATH = "src/materials/base-material/";
     const TEXTURE_SUFFIX = "se2abbvc_2K_";
     const textureLoader = new THREE.TextureLoader().setPath(TEXTURE_PATH);
@@ -20,5 +22,9 @@ export default class BaseMetalMaterial extends THREE.MeshStandardMaterial {
     this.roughnessMap.wrapT = THREE.RepeatWrapping;
     this.envMap = envMap;
     this.envMapIntensity = 1;
+  }
+
+  static getName(){
+    return this.name;
   }
 }

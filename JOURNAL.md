@@ -29,3 +29,5 @@ We can see an image of the visualizer at this moment below:
 ![Image of the Visualizer at the time](screenshots/product-visualizer-no-gui.png)
 
 It's time to implement the ReactJS GUI!
+
+First progress of the GUI. It's implemented in ReactJS and will change the materials accoriding to the settings selected by the user.

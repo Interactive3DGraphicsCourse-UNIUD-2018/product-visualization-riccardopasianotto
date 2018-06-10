@@ -2,9 +2,12 @@ import * as THREE from 'three';
 import Environment from '../objects/Environment.js';
 
 export default class MetalScuff extends THREE.MeshStandardMaterial {
+
   constructor() {
     super();
-    
+
+    this.name = "MS";
+
     const TEXTURE_PATH = "src/materials/metalscuff/";
     const TEXTURE_SUFFIX = "MetalScuffs002_";
     const textureLoader = new THREE.TextureLoader().setPath(TEXTURE_PATH);
@@ -20,5 +23,9 @@ export default class MetalScuff extends THREE.MeshStandardMaterial {
 
     this.envMap = envMap;
     this.envMapIntensity = 1;
+  }
+
+  static getName(){
+    return this.name;
   }
 }

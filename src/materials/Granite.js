@@ -2,9 +2,11 @@ import * as THREE from 'three';
 import Environment from '../objects/Environment.js';
 
 export default class Granite extends THREE.MeshStandardMaterial {
+  
   constructor() {
     super();
-    
+    this.name = 'GR';
+
     const TEXTURE_PATH = "src/materials/granite/";
     const TEXTURE_SUFFIX = "granite_grey_blue_";
     const textureLoader = new THREE.TextureLoader().setPath(TEXTURE_PATH);
@@ -26,5 +28,9 @@ export default class Granite extends THREE.MeshStandardMaterial {
 
     this.envMap = envMap;
     this.envMapIntensity = 0.1;
+  }
+
+  static getName(){
+    return this.name;
   }
 }

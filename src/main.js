@@ -8,6 +8,7 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Configurator from './components/Configurator.js';
 import * as THREE from 'three';
 // Here I need to use a the pacage imports-loader and exports-loader to include in the file included an instance of THREE.js
 // For more info https://threejs.org/docs/#manual/introduction/Import-via-modules
@@ -59,6 +60,6 @@ rootDiv.setAttribute("id","root");
 document.body.appendChild(rootDiv);
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Configurator scene={mainScene}></Configurator>,
   document.getElementById('root')
 );
