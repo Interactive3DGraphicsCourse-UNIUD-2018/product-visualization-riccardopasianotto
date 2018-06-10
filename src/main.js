@@ -24,7 +24,7 @@ const mainScene = new ConfiguratorScene();
 scene.add(mainScene);
 
 // camera
-camera.position.set( 0, 10, 20 );
+camera.position.set( 0, 60, 40 );
 
 var controls = new THREE.OrbitControls( camera );
 controls.target.set( 0, 20, 0 );
