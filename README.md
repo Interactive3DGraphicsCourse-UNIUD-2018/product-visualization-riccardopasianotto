@@ -35,4 +35,21 @@ I selected the model, a free downloadable one, from the online library Sketchfab
 
 Blender played a role also during the creation of the ambient occlusion map of the plane on which the bottle is positioned.
 
-The environment map is created thanks to an online creator of cube maps (https://jonaszeitler.se/cubemap-toastmap-generator/).
+The environment map is created thanks to an online [generator](https://jonaszeitler.se/cubemap-toastmap-generator/) of cube maps. I've found the image through google images.
+
+The textures for the materials have been downloaded from different online libraries such as [freepbr](https://freepbr.com/c/base-metals/), [poliigon](https://www.poliigon.com/search?is_free=true), [allegorithmic](https://source.allegorithmic.com/assets).
+
+After the gathering of all the materials/textures/assets, I started the implementation of the whole scene that is organized with separate files structured in different classes thanks to es6.
+The structure I gave to the codebase allow to make changes with lower effort, augmenting the separation of the responsibilities.
+Implementing and adding new materials is easy and just require the setup of a small area of the application.
+With more time it could have been better, but the ground for improvement is well prepared.
+
+The GUI is easy aswell. There are just few icons to change the materials in the bottom of the screen. These are intuitively clickable by the users.
+The GUI is implemented with a ReactJS component that has a state with a reference to the instance of the main scene. Thanks to this we can send messages to the THREEJS instance of the scene through user events in the interface. Thse events are then mapped to reflect the interactions with the rispective effect in the scene, in this case a change in the material of the bottle cap.
+
+I've not implemented new shaders, I've used the shaders of `MeshStandardMaterial`, but at the time I have not been able to retrieve all the details of the BRDF equation and rendering one.
+I've read the paper related to the approach by [disney](https://disney-animation.s3.amazonaws.com/library/s2012_pbs_disney_brdf_notes_v2.pdf) referenced in the THREEJS documentation, but the codebase of the shaders isn't completely understandable for me due to lak of knowledge of glsl complex programs.
+
+# Screenshots
+![Final product visualizer](screenshots/product-visualizer-final-stage.png)
+![Final product visualizer material changed](screenshots/product-visualizer-material-selected.png)
