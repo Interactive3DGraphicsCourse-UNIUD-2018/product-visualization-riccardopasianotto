@@ -27,3 +27,5 @@ Now the scene looks like a photo booth similar to the [calligaris store](https:/
 
 We can see an image of the visualizer at this moment below:
 ![Image of the Visualizer at the time](screenshots/product-visualizer-no-gui.png)
+
+It's time to implement the ReactJS GUI!
