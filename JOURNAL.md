@@ -31,3 +31,10 @@ We can see an image of the visualizer at this moment below:
 It's time to implement the ReactJS GUI!
 
 First progress of the GUI. It's implemented in ReactJS and will change the materials accoriding to the settings selected by the user.
+
+A simple GUI is now implemented. Basically there is a React component that is called `Configurator.js` located inside `src/components`. This component is responsible to forward the changes in the GUI down to the THREE `ConfiguratorScene` instance. Thanks to the class hierarchy and message-passing, we're able to set and render different materials for the cups of the bottle.
+
+Due to time limitations I wasn't able to implement further functionalities such as an animation of the cap, or a change of preselected color of the cap material. These edits are totally duable in few steps thanks to the organization of the codebase.
+
+A final screenshot is visible here:
+![Product Visualizer final stage](screenshots/product-visualizer-final-stage.png)
