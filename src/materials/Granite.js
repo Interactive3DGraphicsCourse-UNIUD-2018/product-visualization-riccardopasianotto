@@ -13,8 +13,8 @@ export default class Granite extends THREE.MeshStandardMaterial {
     const envMap = new Environment().getEnvironmentMap();
     
     this.metalness = 1;
-    this.roughness = 1;
-    //this.color = new THREE.Color(0xffffff);
+    this.roughness = 0;
+    this.color = new THREE.Color(0x333333);
     this.map = textureLoader.load(TEXTURE_SUFFIX + "Base_Color.jpg")
     this.normalMap = textureLoader.load(TEXTURE_SUFFIX + "Normal.jpg");
     this.metalnessMap = textureLoader.load(TEXTURE_SUFFIX + "Metallic.jpg");
@@ -27,7 +27,7 @@ export default class Granite extends THREE.MeshStandardMaterial {
     this.roughnessMap.wrapT = THREE.RepeatWrapping;
 
     this.envMap = envMap;
-    this.envMapIntensity = 0.1;
+    this.envMapIntensity = 1;
   }
 
   static getName(){
