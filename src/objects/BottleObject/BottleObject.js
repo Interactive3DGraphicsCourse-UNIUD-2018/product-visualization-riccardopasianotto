@@ -6,17 +6,21 @@ export default class ConfiguratorScene extends THREE.Group {
   constructor() {
     super();
 
-    const bottle = new Bottle();
-    const bottleCap = new BottleCap();
+    this.bottle = new Bottle();
+    this.bottleCap = new BottleCap();
 
     // UNcap
 
-    bottleCap.position.setY(2);
+    this.bottleCap.position.setY(2);
   
-    this.add(bottle, bottleCap);
+    this.add(this.bottle, this.bottleCap);
   }
 
   update(timeStamp) {
     this.rotation.y = timeStamp / 10000;
+  }
+
+  updateMaterial(material){
+    this.bottleCap.setMaterial(material);
   }
 }

@@ -12,15 +12,15 @@ export default class ConfiguratorScene extends THREE.Group {
     super();
 
     const lights = new BasicLights();
-    const basicObj = new BottleObject();
+    this.basicObj = new BottleObject();
     const plane = new VisualizationPlane();
 
-    basicObj.position.setY(-0.5);
+    this.basicObj.position.setY(-0.5);
 
     this.materials = [Granite, MetalScuff, RustedIron, BaseMetalMaterial];
 
 
-    this.add(lights, basicObj, plane);
+    this.add(lights, this.basicObj, plane);
   }
 
   update(timeStamp) {
@@ -29,5 +29,9 @@ export default class ConfiguratorScene extends THREE.Group {
 
   getMaterials(){
     return this.materials
+  }
+
+  updateMaterial(i){
+    this.basicObj.updateMaterial(new this.materials[i]);
   }
 }

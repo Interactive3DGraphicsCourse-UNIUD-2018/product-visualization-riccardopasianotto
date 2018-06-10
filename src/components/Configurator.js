@@ -8,6 +8,12 @@ export default class Configurator extends React.Component {
     }
   }
 
+  setMaterial(index){
+
+    this.state.scene.updateMaterial(index);
+    //console.log(e);
+  }
+
   materialList(materials) {
     const materialButtonStyle = {
       padding: '2px 5px',
@@ -16,7 +22,7 @@ export default class Configurator extends React.Component {
     }
 
     const materialItems = materials.map((m,i) => {
-      return <span key={i} style={materialButtonStyle}>{m.getName()}</span>
+      return <span key={i} style={materialButtonStyle} onClick={this.setMaterial.bind(this, i)}>{m.getName()}</span>
     });
     return materialItems
   }
