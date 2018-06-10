@@ -18,11 +18,11 @@ export default class Configurator extends React.Component {
     const materialButtonStyle = {
       padding: '2px 5px',
       fontSize: '14px',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
     }
 
     const materialItems = materials.map((m,i) => {
-      return <span key={i} style={materialButtonStyle} onClick={this.setMaterial.bind(this, i)}>{m.getName()}</span>
+      return <span key={i} style={materialButtonStyle} onClick={this.setMaterial.bind(this, i)}><img src={m.getPreviewSrc()} width="50" heght="50" /></span>
     });
     return materialItems
   }

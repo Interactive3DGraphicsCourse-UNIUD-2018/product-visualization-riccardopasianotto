@@ -5,7 +5,6 @@ export default class BaseMetalMaterial extends THREE.MeshStandardMaterial {
 
   constructor() {
     super();
-    this.name = 'BMM';
 
     const TEXTURE_PATH = "src/materials/base-material/";
     const TEXTURE_SUFFIX = "se2abbvc_2K_";
@@ -26,5 +25,9 @@ export default class BaseMetalMaterial extends THREE.MeshStandardMaterial {
 
   static getName(){
     return this.name;
+  }
+
+  static getPreviewSrc(){
+    return "src/materials/base-material/base-metal-preview.png";
   }
 }

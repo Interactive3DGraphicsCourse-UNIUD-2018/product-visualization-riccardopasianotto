@@ -27,4 +27,8 @@ export default class RustedIron extends THREE.MeshStandardMaterial {
   static getName(){
     return this.name;
   }
+
+  static getPreviewSrc(){
+    return "src/materials/rustediron/rusted-preview.png";
+  }
 }

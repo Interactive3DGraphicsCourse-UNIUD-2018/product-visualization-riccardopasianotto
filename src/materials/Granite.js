@@ -5,7 +5,6 @@ export default class Granite extends THREE.MeshStandardMaterial {
   
   constructor() {
     super();
-    this.name = 'GR';
 
     const TEXTURE_PATH = "src/materials/granite/";
     const TEXTURE_SUFFIX = "granite_grey_blue_";
@@ -32,5 +31,9 @@ export default class Granite extends THREE.MeshStandardMaterial {
 
   static getName(){
     return this.name;
+  }
+
+  static getPreviewSrc(){
+    return "src/materials/granite/granite-preview.jpg";
   }
 }

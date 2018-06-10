@@ -6,8 +6,6 @@ export default class MetalScuff extends THREE.MeshStandardMaterial {
   constructor() {
     super();
 
-    this.name = "MS";
-
     const TEXTURE_PATH = "src/materials/metalscuff/";
     const TEXTURE_SUFFIX = "MetalScuffs002_";
     const textureLoader = new THREE.TextureLoader().setPath(TEXTURE_PATH);
@@ -27,5 +25,9 @@ export default class MetalScuff extends THREE.MeshStandardMaterial {
 
   static getName(){
     return this.name;
+  }
+
+  static getPreviewSrc(){
+    return "src/materials/metalscuff/scuff-preview.png";
   }
 }
