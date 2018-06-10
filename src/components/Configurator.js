@@ -9,9 +9,7 @@ export default class Configurator extends React.Component {
   }
 
   setMaterial(index){
-
     this.state.scene.updateMaterial(index);
-    //console.log(e);
   }
 
   materialList(materials) {
@@ -19,6 +17,7 @@ export default class Configurator extends React.Component {
       padding: '2px 5px',
       fontSize: '14px',
       fontWeight: 'bold',
+      cursor: 'pointer'
     }
 
     const materialItems = materials.map((m,i) => {

@@ -21,6 +21,7 @@ export default class BaseMetalMaterial extends THREE.MeshStandardMaterial {
     this.roughnessMap.wrapT = THREE.RepeatWrapping;
     this.envMap = envMap;
     this.envMapIntensity = 1;
+    this.side = THREE.DoubleSide;
   }
 
   static getName(){

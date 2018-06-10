@@ -24,7 +24,7 @@ export default class ConfiguratorScene extends THREE.Group {
   }
 
   update(timeStamp) {
-    //sthis.rotation.y = timeStamp / 10000;
+    this.rotation.y = timeStamp / 10000;
   }
 
   getMaterials(){

@@ -22,6 +22,7 @@ export default class RustedIron extends THREE.MeshStandardMaterial {
     this.roughnessMap.wrapS = THREE.RepeatWrapping;
     this.envMap = envMap;
     this.envMapIntensity = 0.1;
+    this.side = THREE.DoubleSide;
   }
 
   static getName(){

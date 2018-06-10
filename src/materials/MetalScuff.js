@@ -21,6 +21,7 @@ export default class MetalScuff extends THREE.MeshStandardMaterial {
 
     this.envMap = envMap;
     this.envMapIntensity = 1;
+    this.side = THREE.DoubleSide;
   }
 
   static getName(){
